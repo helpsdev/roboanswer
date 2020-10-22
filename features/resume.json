@@ -104,30 +104,53 @@
   ],
   "publications": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "How to Send a Complex Type List of Objects to SQL Server",
+      "publisher": "Dev To Platform",
+      "releaseDate": "2020-10-03",
+      "url": "https://dev.to/edwinoaragon/how-to-send-a-complex-type-list-of-objects-to-sql-server-266b",
+      "summary": "Tutorial on how to send a list of multiple complex objects to SQL Server from C#"
+    },
+    {
+      "name": "The Evil Is In The Details",
+      "publisher": "Dev To Platform",
+      "releaseDate": "2020-09-05",
+      "url": "https://dev.to/edwinoaragon/the-evil-is-in-the-details-4hk6",
+      "summary": "Simple debugging session on using the XMLHttpRequest object"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Front-End",
+      "level": "Mid",
       "keywords": [
         "HTML",
         "CSS",
-        "Javascript"
+        "Javascript",
+        "Razor view engine",
+        "Web Forms view engine"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Front-End",
+      "level": "junior",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "React"
+      ]
+    },
+    {
+      "name": "Back-end",
+      "level": "Mid",
+      "keywords": [
+        "C#",
+        "Web Forms",
+        "SQL Server"
+      ]
+    },
+    {
+      "name": "Back-end",
+      "level": "Junior",
+      "keywords": [
+        "Node"
       ]
     }
   ],

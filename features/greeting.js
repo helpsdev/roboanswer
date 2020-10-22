@@ -1,7 +1,13 @@
 const { BotkitConversation } = require("botkit");
 const MyResume = require('./resume.json');
-
 const GREETING_DIALOG = "greeting_dialog";
+const ValidResumeSections = [
+    "work",
+    "education",
+    "publications",
+    "skills",
+    "languages"
+]
 
 
 module.exports = function (controller) {
@@ -14,11 +20,13 @@ module.exports = function (controller) {
     greetingDialog.say("If you're a recruiter I encourage you to ask me things you want to know about me");
     greetingDialog.say({
         text: "Here are some topics to help you brake the ice 😉",
-        quick_replies: Object.keys(MyResume).map(e => { //Find a way to get rid of $schema and meta
-            return {
-                title: e,
-                payload: e
-            }
+        quick_replies: Object.keys(MyResume)
+            .filter(key => ValidResumeSections.indexOf(key) > -1)
+            .map(key => {
+                return {
+                    title: key,
+                    payload: key
+                };
         })
     });
 

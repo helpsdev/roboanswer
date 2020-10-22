@@ -3,24 +3,33 @@ const MyResume = require('./resume.json');
 module.exports = function (controller) {
     
     controller.hears(Object.keys(MyResume),"message", async (bot, message) => {
-        const areaOfInterestObj = MyResume[message.text];
+        const areaOfInterest = MyResume[message.text];
 
-        if (Array.isArray(areaOfInterestObj)) {
+        if (Array.isArray(areaOfInterest)) {
             
             let detailResponse;
             switch (message.text) {
                 case "work":
                     detailResponse = "places I've worked on: ";
                     break;
-                case "volunteer":
-                    detailResponse = "volunteer I've been part of: ";
+                case "education":
+                    detailResponse = "education places I've studied on: ";
+                    break;
+                case "publications":
+                    detailResponse = "digital publications I've wrote about: ";
+                    break;
+                case "skills":
+                    detailResponse = "skills I count with: ";
+                    break;
+                case "languages":
+                    detailResponse = "languages I speak: ";
                     break;
                 default:
                     break;
             }
 
-            await bot.reply(message, "This are the " + detailResponse);
-            for (elem of areaOfInterestObj){
+            await bot.reply(message, "These are the " + detailResponse);
+            for (elem of areaOfInterest){
                 const firstPropName = Object.keys(elem)[0];
                 await bot.reply(message, `${firstPropName}: ${elem[firstPropName]}`);
             }
@@ -28,7 +37,7 @@ module.exports = function (controller) {
         }else{
             await bot.reply(message, {
                 text: "I think you're interested in one of these would you help me pointing in the rigth direction?",
-                quick_replies: Object.keys(areaOfInterestObj).map(toQuickReply)
+                quick_replies: Object.keys(areaOfInterest).map(toQuickReply)
             });
         }
     });
