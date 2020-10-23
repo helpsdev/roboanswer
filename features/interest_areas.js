@@ -1,4 +1,5 @@
 const MyResume = require('./resume.json');
+const {BotkitConversation} = require("botkit");
 
 module.exports = function (controller) {
     
@@ -36,14 +37,18 @@ module.exports = function (controller) {
 
         }else{
             await bot.reply(message, {
-                text: "I think you're interested in one of these would you help me pointing in the rigth direction?",
+                text: "I think you're interested in one of these would you help me pointing me in the rigth direction?",
                 quick_replies: Object.keys(areaOfInterest).map(toQuickReply)
             });
         }
     });
 
     controller.hears("Job History", "message", async (bot, message) => {
-        
+        const jobHistory = MyResume.work;
+        await bot.reply(message, {
+            text: "I see you want to know about about my job history. Which job would you like to know more about?",
+            quick_replies: jobHistory.map(j => j.name).map(toQuickReply)
+        });
     });
 
     controller.hears("Education", "message", async (bot, message) => {
