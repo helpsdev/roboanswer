@@ -9,11 +9,8 @@
     "url": "",
     "summary": "I'm a fullstack developer who is used to work with all the parts involving a web app (Front-End, Back-End, Databases, Deployment). I'm a good team player who is focusing on delivering value to the client through the hard work. I'm always looking for improving myself so feedback is essential for me. I like to share all my experience with others through blogging, contributing to open source and more!",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Chihuahua",
-      "countryCode": "MX",
-      "region": ""
+      "countryCode": "MX"
     },
     "profiles": [
       {
@@ -36,70 +33,51 @@
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "name": "Datazone Intern",
+      "location": "Chihuahua, MX",
+      "position": "Internship",
+      "url": "",
+      "startDate": "2014-11-01",
+      "endDate": "2015-11-01",
+      "summary": "I was part of the developers team on the call center area for the Autozone stores. My main role was to develop alonside other developers a new tool for the people monitoring the ongoing events in the ticketing system they use which was capable to present the tickets information in a friendly manner.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Learned Java + Spring Framework, Thymeleaf, jQuery, Angular, MySQL and Subversion. Implement a module with these tecnologies that read the ongoing events in the call-center and displayed information about them. Showed information with conditional coloring depending on the status of the events and the ability to filter and sort the results in a table"
+      ]
+    },
+    {
+      "name": "Grupo Red Software Development",
+      "location": "Mexicali, BC",
+      "position": "Junior Developer",
+      "url": "https://grupored.com.mx/",
+      "startDate": "2015-11-01",
+      "endDate": "2016-05-01",
+      "summary": "I was part of the development team of the compay working for multiple projects accordingly to the needs of the clients.",
+      "highlights": [
+        "Learned ASP.NET Web Forms, SQL Server, C#, Team Foundation Server"
       ]
     },
     {
       "name": "PK Global",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "location": "Chihuahua, MX",
+      "position": "Web Developer",
+      "url": "https://pkglobal.com/",
+      "startDate": "2016-06-01",
+      "summary": "I'm part of the development team assigned to the Midas company. Developing solutions to implement their web page, adminitration site for the same web page and also its maintenance",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "I earned a MCSA: Web Applications Certification issued by Microsoft",
+        "Successfully implemented the site's redesign at the same time we replatformed the old ASP.NET Web forms tecnology we used to a more recent ASP.NET MVC 5 platform, transparent to the client through 6 phases without stopping serving the site and giving it the required maintenance. We also improved our site performance using the best practices.",
+        "Successfully refactored the site to meet the AA ADA compliance wihch improved our site's accessiblity"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
+      "institution": "Autonomus University of Chihuahua",
+      "url": "https://uach.mx/",
+      "area": "Engineering Faculty",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "startDate": "2010-08-01",
+      "endDate": "2014-12-01"
     }
   ],
   "publications": [
@@ -157,48 +135,24 @@
   "languages": [
     {
       "language": "English",
+      "fluency": "Conversational"
+    },
+    {
+      "language": "Spanish",
       "fluency": "Native speaker"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
+      "name": "Blogging"
+    },
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
+      "name": "Open Source"
+    },
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": [
-        "GoogleMaps",
-        "Chrome Extension",
-        "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "missdirection.example.com",
-      "roles": [
-        "Team lead",
-        "Designer"
-      ],
-      "entity": "Smoogle",
-      "type": "application"
+      "name": "Technology"
     }
+
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",

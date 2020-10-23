@@ -42,6 +42,22 @@ module.exports = function (controller) {
         }
     });
 
+    controller.hears("Job History", "message", async (bot, message) => {
+        
+    });
+
+    controller.hears("Education", "message", async (bot, message) => {
+        
+    });
+
+    controller.hears("Tech Stack", "message", async (bot, message) => {
+        
+    });
+
+    controller.hears("Contact Information", "message", async (bot, message) => {
+        
+    });
+
 }
 
 function toQuickReply(propName){

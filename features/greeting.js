@@ -20,14 +20,7 @@ module.exports = function (controller) {
     greetingDialog.say("If you're a recruiter I encourage you to ask me things you want to know about me");
     greetingDialog.say({
         text: "Here are some topics to help you brake the ice 😉",
-        quick_replies: Object.keys(MyResume)
-            .filter(key => ValidResumeSections.indexOf(key) > -1)
-            .map(key => {
-                return {
-                    title: key,
-                    payload: key
-                };
-        })
+        quick_replies: getCoreSections()
     });
 
 
@@ -37,4 +30,26 @@ module.exports = function (controller) {
         await bot.beginDialog(GREETING_DIALOG);
     });
 
+}
+
+function getCoreSections(){
+    return [
+        "Job History",
+        "Education",
+        "Tech Stack",
+        "Contact Information"
+    ].map(toQuickReply);
+}
+
+function toQuickReply(element){
+    return {
+        title : element,
+        payload : element
+    }
+}
+
+function getResumeMainSections(){
+    return Object.keys(MyResume)
+    .filter(key => ValidResumeSections.indexOf(key) > -1)
+    .map(toQuickReply);
 }
